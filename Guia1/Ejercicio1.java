@@ -1,5 +1,3 @@
-package EstructuraDeDatos.Guia1;
-
 /**
  * Ejercicio 1: Encontrar el valor mínimo de un vector de enteros.
  *
