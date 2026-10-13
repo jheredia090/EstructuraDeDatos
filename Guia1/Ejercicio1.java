@@ -10,8 +10,16 @@ public class Ejercicio1 {
      *
      * Complejidad temporal: O(n)
      * Complejidad espacial: O(1)
+     *
+     * @param vector Arreglo de enteros a evaluar.
+     * @return El valor mínimo encontrado.
+     * @throws IllegalArgumentException Si el vector es nulo o no contiene elementos.
      */
     public static int encontrarMinimo(int[] vector) {
+        if (vector == null || vector.length == 0) {
+            throw new IllegalArgumentException("El vector no puede ser nulo ni estar vacío.");
+        }
+
         int minimo = vector[0];
 
         for (int i = 1; i < vector.length; i++) {

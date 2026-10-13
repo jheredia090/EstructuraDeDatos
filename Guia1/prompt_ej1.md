@@ -34,6 +34,9 @@ Requisitos del programa:
    incluir una prueba con un vector de ejemplo.
 7. Si se decide hacer una versión con un método separado, debe quedar
    bien estructurada y legible.
+8. Debe contemplar el manejo de casos límite: validar si el vector es null
+   o está vacío (length == 0), lanzando una excepción clara (IllegalArgumentException)
+   para prevenir NullPointerException o ArrayIndexOutOfBoundsException.
 
 Ejemplo de prueba:
 int[] vector = {12, 4, 7, 1, 9, 15, 3};
